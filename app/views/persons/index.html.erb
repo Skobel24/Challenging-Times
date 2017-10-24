@@ -1,0 +1,7 @@
+<h2>List of People</h2>
+
+<ul>
+  <% @Persons.each do |person| %>
+    <li><%=person.first_name%> <%=person.last_name%></li>
+  <% end %>
+</ul>
