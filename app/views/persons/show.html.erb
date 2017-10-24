@@ -1,5 +1,8 @@
 <h2>Single Person</h2>
 
-First Name:<%= @Person.first_name %>
-<br />
-Second Name:<%= @Person.last_name %>
+<%= render partial: 'person',
+           object: @Person %>
+
+<p>
+  <%= link_to 'Go Back', persons_path %>
+</p>
